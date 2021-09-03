@@ -1,7 +1,7 @@
 # IRSScrape
 
 ## Background
-This is a take home interview problem that I did for a fintech company looking into hiring Software Engineers for their Integrations time. For the interview, I was required to write two tasks that searches through the Prior Year Products webpage from the IRS website, https://apps.irs.gov/, and do the following:
+This is a take home interview problem that I did for a fintech company looking into hiring Software Engineers for their Integrations team. For the interview, I was required to write two tasks that searches through the Prior Year Products webpage from the IRS website, https://apps.irs.gov/, and do the following:
 1. Taking a list of tax forms, generating a JSON object with a list of dictionary objects with information regarding the tax forms including
 	- Tax form name
 	- Tax form description
@@ -95,4 +95,17 @@ pip install -r requirements.txt
 		Task Complete
 	```
 	
-	
+# EDIT: 08-26-2021
+
+## Job Response
+
+The company replied back to the assignment and unfornately I didn't make it into the next round for the position. This was the feedback giving from the grader.
+
+"The code organization was very thorough and followed all of the requirements. The approach used scrapes the entire IRS form website and saves it as a file to reuse on subsequent runs - this means the first run is extremely slow, and generally this approach is not the correct one. JSON output is correct with helpful output on incorrect form names. PDF download does not appear to work and gives a "form does not exist" message for any form."
+
+I was doing more research on web scraping and I came to learn that there are various web scraping techniques that are well-known in the industry. I have to do more research on that and Selenium.
+
+TO DO:
+
+1.) Do more research on web scraping techniques and selenium
+2.) Look into a technique that'll make the first run not extremely slow.	
